@@ -1,0 +1,8 @@
+# Compiled class file
+*.class
+
+# Idea Projects
+*.iml
+.idea
+# Project exclude paths
+/target/
