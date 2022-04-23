@@ -42,7 +42,7 @@ CREATE TABLE airport.airplane_route (
 CREATE TABLE airport.ticket (
     id INT PRIMARY KEY AUTO_INCREMENT,
 	id_route INT,
-    id_order INT,
+    id_order INT UNIQUE,
     passport_data varchar(256) NOT NULL,
     CONSTRAINT fk_route_2 FOREIGN KEY (id_route) REFERENCES airport.route(id),
     CONSTRAINT fk_order FOREIGN KEY (id_order) REFERENCES airport.order(id)
